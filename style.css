@@ -19,6 +19,9 @@
 .fourth-color{
     color: #5D58EF;
 }
+.fifth-color{
+    color: #64C8FF;
+}
 
 /* shared style */
 .btn-prim{
@@ -29,8 +32,9 @@
     height: 3.25rem;
     font-weight: semibold;
     font-size: 1.25rem;
+    background: none;
 }
-nav,.banner{
+nav,main{
     margin:1.875rem 9.375em ;
 }
 
@@ -95,13 +99,109 @@ nav svg{
     color: white;
 }
 
+/* Standard */
+
+.standard-curri{
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    background-image: url(assets/bg.png);
+    background-size: cover;
+}
+
+.sc-title{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.sc-grids{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.sc-grids img{
+    width: 8.5rem;
+    height: 8.5rem;
+    background: none;
+}
+.grid-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: none;
+}
+.grid-desc{
+    font-size: .9rem;
+    font-weight: 500;
+    color: #808080;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: none;
+}
+
+.sc-grid-1{
+    border: .5px solid #DEF5FF;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px #DEF5FF(0, 0, 0, 0.3);
+    background: linear-gradient(#DEF5FF 1%, #ffffff); 
+    padding: 2rem;
+}
+.sc-grid-2{
+    border: .5px solid #FFF4DC;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px #FFF4DC(0, 0, 0, 0.3);
+    background: linear-gradient(#FFF4DC 1%, #ffffff); 
+    padding: 2rem;
+}
+.sc-grid-3{
+    border: .5px solid #F2E8FF;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #F2E8FF(0, 0, 0, 0.5);
+    background: linear-gradient(#F2E8FF 1%, #ffffff); 
+    padding: 2rem;
+}
+
+.slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.previous-slide{
+    width: 8%;
+}
+
+.previous-slide svg{
+    background-color: orange;
+    border-radius: 50%;
+}
+.next-slide{
+    width: 8%;
+}
+
+.next-slide svg{
+    background-color: orange;
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 576px){
 
     /* nav */
-    nav{
+    nav {
         margin:0px;
         padding: 40px 20px;
         border: 1.5px solid orange;
+    }
+    main{
+        margin:0px;
+        padding: 40px 20px;
     }
     .nav-left h4{
         display: none;
@@ -123,10 +223,26 @@ nav svg{
         margin: 0px;
         padding: 40px 20px;
     }
+    .banner-title{
+        font-weight: 700;
+        font-size:3rem;
+    }
     .banner-left{
         text-align: center;
     }
     .banner-img{
         width: 100%;
+    }
+
+    /* standard */
+    .sc-grids{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .previous-slide{
+        display: none;
+    }
+    .next-slide{
+        display: none;
     }
 }
