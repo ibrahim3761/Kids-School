@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: quicksand;
+    margin: 0px;
+    padding: 0px;
+    background-color: #F7F7F7;
+}
+
+/* colors */
+.first-color{
+    color: orange;
+}
+.second-color{
+    color: #01ACFD;
+}
+.third-color{
+    color: #05D4DF;
+}
+.fourth-color{
+    color: #5D58EF;
+}
+
+/* shared style */
+.btn-prim{
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 12rem;
+    height: 3.25rem;
+    font-weight: semibold;
+    font-size: 1.25rem;
+}
+nav,.banner{
+    margin:1.875rem 9.375em ;
+}
+
+/* nav */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-middle ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap :1.2rem
+}
+.nav-middle li{
+    list-style: none;
+    font-weight: 700;
+}
+
+.nav-middle li a{
+    text-decoration: none; 
+}
+
+.nav-button{
+    background-color: orange;
+    color: white;
+}
+
+nav svg{
+    display: none;
+}
+
+
+/* banner */
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.banner-title{
+    font-weight: 700;
+    font-size:3.5rem;
+}
+
+.banner-desc{
+    font-size: 1.4rem;
+    padding-top: 20px;
+}
+
+.banner-button{
+    background-color: black;
+    margin-top: 20px;
+    color: white;
+}
+
+@media screen and (max-width: 576px){
+
+    /* nav */
+    nav{
+        margin:0px;
+        padding: 40px 20px;
+        border: 1.5px solid orange;
+    }
+    .nav-left h4{
+        display: none;
+    }
+    .nav-middle{
+        display: none;
+    }
+    .nav-right{
+        display: none;
+    }
+    nav svg{
+        display: block;
+        cursor: pointer;
+    }
+
+    /* banner */
+    .banner{
+        flex-direction: column-reverse;
+        margin: 0px;
+        padding: 40px 20px;
+    }
+    .banner-left{
+        text-align: center;
+    }
+    .banner-img{
+        width: 100%;
+    }
+}
