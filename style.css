@@ -52,6 +52,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .nav-middle ul{
     display: flex;
@@ -75,6 +76,13 @@ nav{
 
 nav svg{
     display: none;
+}
+
+/* Marquee */
+.marquee{
+    color: orange;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 
@@ -124,6 +132,7 @@ nav svg{
 
 .sc-grids{
     align-items: center;
+    text-align: center;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 2rem;
@@ -137,6 +146,7 @@ nav svg{
     background: none;
 }
 .grid-title{
+    text-align: center;
     font-weight: 700;
     font-size: 1.5rem;
     padding-top: 1rem;
@@ -153,6 +163,7 @@ nav svg{
 }
 
 .sc-grid-1{
+    text-align: center;
     border: .5px solid #DEF5FF;
     border-radius: 12px;
     box-shadow: 0 4px 6px #DEF5FF(0, 0, 0, 0.3);
@@ -255,6 +266,7 @@ nav svg{
 }
 
 .grid-1{
+    text-align: start;
     height: 38rem;
     width: 33.75rem;
     border: .5px solid #FFFFFF;
@@ -279,6 +291,7 @@ nav svg{
 
 }
 .grid-1-title{
+    text-align: start;
     padding: 20px 0px;
     padding-left: 20px;
     background: none;
@@ -319,22 +332,23 @@ nav svg{
 .grid-2-btn,.grid-4-btn,.grid-5-btn{
     padding: 5px 10px;
     position: absolute;
-    top: 164px;
+    top: 170px;
     left : 24px;
     background-color: #95B226;
 }
 .grid-3-btn{
     padding: 5px 10px;
     position: absolute;
-    top: 164px;
+    top: 170px;
     left : 24px;
     background-color: #5D58F0;  
 }
-.grid-title{
+.grid-titles{
     text-align: start;
     padding: 20px 1.87rem;
     font-weight: 700;
     font-size: 0.93rem;
+    background: none;
 }
 
 .stories-btn{
@@ -496,7 +510,7 @@ footer{
     .grid-left {
         display: none; 
     }
-    .grid-title{
+    .grid-titles{
         padding-top: 10px;
         padding-bottom: 20px;
         padding-left: 10px;
