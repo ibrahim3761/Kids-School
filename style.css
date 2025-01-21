@@ -275,7 +275,7 @@ nav svg{
     width: 10rem;
     height: 2.5rem;
     top: -25px;
-    left : 20px;
+    left : 1.25rem;
 
 }
 .grid-1-title{
@@ -303,34 +303,36 @@ nav svg{
 }
 
 .grid{
-    width: 100%;
+    position: relative;
     border: .5px solid #FFFFFF;
     border-radius: 12px;
     background-color: white;
+    
 }
 .grid img{
     width: 100%;
+    height: 11.5rem;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
 
 .grid-2-btn,.grid-4-btn,.grid-5-btn{
-    width: 10rem;
-    height: 2.5rem;
-    top: -1.56rem;
-    margin-left : -5rem;
+    padding: 5px 10px;
+    position: absolute;
+    top: 164px;
+    left : 24px;
     background-color: #95B226;
 }
 .grid-3-btn{
-    width: 10rem;
-    height: 2.5rem;
-    top: -1.56rem;
-    margin-left : -5rem;
-    background-color: #5D58F0;
+    padding: 5px 10px;
+    position: absolute;
+    top: 164px;
+    left : 24px;
+    background-color: #5D58F0;  
 }
 .grid-title{
     text-align: start;
-    padding: 0px 1.87rem;
+    padding: 20px 1.87rem;
     font-weight: 700;
     font-size: 0.93rem;
 }
@@ -473,7 +475,6 @@ footer{
     /* standard */
     
     .sc-grids{
-        display: grid;
         grid-template-columns: repeat(1,1fr);
         background: none;
     }
@@ -498,19 +499,15 @@ footer{
     .grid-title{
         padding-top: 10px;
         padding-bottom: 20px;
+        padding-left: 10px;
     }
-    .grid-2-btn,.grid-4-btn,.grid-5-btn{
-        width: 70%;
-        top: -1.56rem;
-        margin-left : -1.75rem;
-        
-    }
-    .grid-3-btn{
-        width: 70%;
-        top: -1.56rem;
-        margin-left : -1.75rem;
-    }
-    
+     .grid-2-btn,.grid-4-btn,.grid-3-btn,.grid-5-btn{
+        font-size: 12px;
+        padding: 5px 5px;
+        top: 170px;
+        left: 8px;
+     }
+
     /* footer */
     footer{
         background-color: #01ACFD;
