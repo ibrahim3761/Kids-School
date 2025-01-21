@@ -317,20 +317,20 @@ nav svg{
 .grid-2-btn,.grid-4-btn,.grid-5-btn{
     width: 10rem;
     height: 2.5rem;
-    top: -25px;
-    left : -35px;
+    top: -1.56rem;
+    margin-left : -5rem;
     background-color: #95B226;
 }
 .grid-3-btn{
     width: 10rem;
     height: 2.5rem;
-    top: -25px;
-    left : -35px;
+    top: -1.56rem;
+    margin-left : -5rem;
     background-color: #5D58F0;
 }
 .grid-title{
     text-align: start;
-    padding: 0px 30px;
+    padding: 0px 1.87rem;
     font-weight: 700;
     font-size: 0.93rem;
 }
@@ -500,13 +500,15 @@ footer{
         padding-bottom: 20px;
     }
     .grid-2-btn,.grid-4-btn,.grid-5-btn{
-    
-        top: -25px;
-        left : -20px;
+        width: 70%;
+        top: -1.56rem;
+        margin-left : -1.75rem;
+        
     }
     .grid-3-btn{
-        top: -25px;
-        left : -20px;
+        width: 70%;
+        top: -1.56rem;
+        margin-left : -1.75rem;
     }
     
     /* footer */
